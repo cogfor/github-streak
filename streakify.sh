@@ -5,6 +5,7 @@ STREAKFILE='.streak'
 echo 'Keep that streak going... artificially'
 
 echo `The time is date -Iseconds` >> $STREAKFILE
+curl http://loripsum.net/api/10/short/headers >> $STREAKFILE
 git commit -a -m "update streak for `date -I`"
 git push
 
