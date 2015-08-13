@@ -4,7 +4,7 @@ STREAKFILE='.streak'
 
 echo 'Keep that streak going... artificially'
 
-echo `date -Iseconds` >> $STREAKFILE
+echo `The time is date -Iseconds` >> $STREAKFILE
 git commit -a -m "update streak for `date -I`"
 git push
 
